@@ -1,5 +1,7 @@
 body {
     background-color: #E5E5E5;
+    width: 95%;
+    box-sizing: border-box;
 }
 
 header {
@@ -44,6 +46,67 @@ li span {
     margin: 0 3px;
 }
 
+.sidebar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 90;
+    transition: all 0.5s;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar h1 {
+    background-color: rgb(241, 232, 232);
+    width: 100%;
+    height: 84px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.sidebar .users {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0 auto;
+}
+
+.sidebar img {
+    height: 25px;
+    margin: 10px;
+}
+
+.sidebar p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fundo {
+    background-color: rgba(0, 0, 0, 0.267);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 80;
+}
+
+.displayNone {
+    transition: all 0.5s;
+    display: none;
+}
+
 .message {
     background-color: #FFFFFF;
 }
@@ -62,13 +125,23 @@ footer {
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     left: 0;
 }
 
+.entrada-mensagem {
+    display: flex;
+    flex-direction: column;
+}
+
 footer input{
-    width: 300px;
+    margin: 0 20px;
+    width: 90%;
     height: 30px;
+}
+
+footer img {
+    margin: 0 20px;
 }

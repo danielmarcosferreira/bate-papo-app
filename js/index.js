@@ -1,6 +1,7 @@
 let lista = [];
 
-const nome = prompt('Qual seu nome?');
+// const nome = prompt('Qual seu nome?');
+const nome = "DaniDani"
 
 function entrarNaSala () {
     
@@ -61,6 +62,19 @@ function deuCerto(resposta) {
             `;
         }
     }
+}
+
+const sidebar = document.querySelector(".sidebar")
+const fundo = document.querySelector(".fundo")
+function openSidebar () {
+    fundo.classList.remove("displayNone")
+    sidebar.classList.remove("displayNone")
+    console.log(sidebar)
+}
+
+function toggleSidebar () {
+    sidebar.classList.toggle("displayNone")
+    fundo.classList.toggle("displayNone")
 }
 
 function mandarMensagem () {

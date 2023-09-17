@@ -11,8 +11,31 @@
 <body>
     <header>
         <div><img src="images/logo 1.png" alt="logo chat uol"></div>
-        <div><img src="images/vector-users.png" alt="vector users"></div>
+        <div><img src="images/vector-users.png" alt="vector users" onclick="openSidebar()"></div>
     </header>
+    <div class="sidebar displayNone">
+        <h1>Escolha um contato para enviar mensagem:</h1>
+
+        <div class="users">
+            <img src="images/vector-users.png" alt="users image">
+            <p>Todos</p>
+        </div>
+        <div class="users">
+            <img src="images/person-circle 1.png" alt="users image">
+            <p>Joao</p>
+        </div>
+
+        <h1>Escolha a Visibilidade:</h1>
+        <div class="users">
+            <img src="images/lock-open 1.png" alt="users image">
+            <p>Publico</p>
+        </div>
+        <div class="users">
+            <img src="images/lock-closed 1.png" alt="users image">
+            <p>Reservadamente</p>
+        </div>
+    </div>
+    <div class="fundo displayNone" onclick="toggleSidebar()"></div>
 
     <main>
         <ul>
@@ -21,7 +44,10 @@
     </main>
 
     <footer>
-        <input type="text" name="mensagem" value="" placeholder="Escreva aqui...">
+        <div class="entrada-mensagem">
+            <input type="text" name="mensagem" value="" placeholder="Escreva aqui...">
+            <span>Enviando para Todos</span>
+        </div>
 
         <div onclick="mandarMensagem()"><img src="images/vector.png" alt="vector seta"></div>
     
